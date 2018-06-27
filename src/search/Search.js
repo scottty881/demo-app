@@ -77,7 +77,7 @@ export class Search extends React.Component {
     } = this.props;
     return (
       <div>
-        <AppBar position="static" color="default" />
+        <AppBar position="static" color="default" className="container" />
         <Tabs
           value={tabIndex}
           onChange={setActiveTab}
