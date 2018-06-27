@@ -12,18 +12,19 @@ const searchReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case Types.UPDATE_FOOD_CATEGORY: {
       const { foodCategory } = action;
-      return { ...state, foodCategory };
+      return { ...state, foodCategory, resultsRequested: false };
     }
 
     case Types.UPDATE_SEARCH_KEYWORD: {
       const { searchKeyword } = action;
-      return { ...state, searchKeyword };
+      return { ...state, searchKeyword, resultsRequested: false };
     }
 
     case Types.REQUEST_RECIPE_DATA: {
       return {
         ...state,
         showLoading: true,
+        resultsRequested: true,
         offset: state.offset
       };
     }

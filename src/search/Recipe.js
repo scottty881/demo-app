@@ -5,8 +5,15 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 
-function Recipe({ recipeData }) {
-  if (!recipeData.length) {
+function Recipe({ recipeData, showLoading, resultsRequested }) {
+  if (showLoading) {
+    return (
+      <div className="recipeBlock">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+  if (resultsRequested && !recipeData.length) {
     return (
       <div className="recipeBlock">
         <p>No results were found</p>
