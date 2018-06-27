@@ -1,0 +1,30 @@
+.recipeBlock {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.searchBlock {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  margin: auto;
+}
+.contentBlock {
+  display: flex;
+  justify-content: space-between;
+}
+.cardImage {
+  height: 300px;
+  width: 300px;
+}
+.primaryText {
+  font-weight: bold;
+  margin: 0;
+}
+.secondaryText {
+  font-size: 16px;
+  margin: 0;
+  color: rgb(77, 77, 77);
+}
