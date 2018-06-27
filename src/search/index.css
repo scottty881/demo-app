@@ -1,11 +1,11 @@
 .recipeBlock {
-  max-width: 300px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 .searchBlock {
-  max-width: 300px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   padding: 20px 0px;
@@ -16,8 +16,8 @@
   justify-content: space-between;
 }
 .cardImage {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
 }
 .primaryText {
   font-weight: bold;
