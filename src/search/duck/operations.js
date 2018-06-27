@@ -1,7 +1,7 @@
 import request from "request";
 import { Creators } from "./actions";
-const APP_ID = "46f99e65";
-const APP_KEY = "5269de07902ec8c13879cc46c22a6690";
+const APP_ID = "46f99e65"; // hardcoded for now
+const APP_KEY = "5269de07902ec8c13879cc46c22a6690"; // hardcoded for now
 const receiveRecipeData = Creators.receiveRecipeData;
 const requestRecipeData = Creators.requestRecipeData;
 const updateTabIndex = Creators.updateTabIndex;
